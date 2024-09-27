@@ -1039,11 +1039,11 @@ const navMenu = document.querySelector('.nav-menu');
 const closeButton = document.querySelector('.nav-menu .close-button');
 
 toggleButton.addEventListener('click', () => {
-    navMenu.classList.add('active');
+  navMenu.classList.toggle('active'); // Toggle the active class
 });
 
 closeButton.addEventListener('click', () => {
-    navMenu.classList.remove('active');
+  navMenu.classList.remove('active');
 });
 
 // Header visibility based on width
@@ -1072,9 +1072,9 @@ number();
 document.addEventListener('DOMContentLoaded', function() {
     function handleNavVisibility() {
         var humbarger = document.querySelector('.toggle-button');
-        if (window.innerWidth < 796) {
+        if (window.innerWidth < 900) {
             humbarger.style.display = 'block';
-        } else if (window.innerWidth > 796) {
+        } else if (window.innerWidth > 900) {
             if (humbarger) {
                 humbarger.parentNode.removeChild(humbarger);
             }

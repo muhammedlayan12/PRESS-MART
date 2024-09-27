@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background for contrast */
+    display: flex; /* Centering the form */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.form-container {
+    max-width: 300px; /* Width of the form */
+    padding: 20px;
+    border: none; /* Removed border for a cleaner look */
+    border-radius: 15px; /* More rounded corners for a modern look */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    background-color: #ffffff; /* White background for contrast */
+    transition: transform 0.3s; /* Smooth scaling transition */
+}
+
+.form-container:hover {
+    transform: scale(1.02); /* Slight scale on hover for interactivity */
+}
+
+input {
+    width: 100%;
+    padding: 10px; /* Adjusted padding for a compact feel */
+    margin: 10px 0; /* Spacing between inputs */
+    border: 2px solid #0056b3; /* Blue border for input fields */
+    border-radius: 8px; /* Rounded corners for input fields */
+    font-size: 16px; /* Increased font size for better readability */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+input:focus {
+    border-color: #ffc107; /* Yellow border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.7); /* Glow effect on focus */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Button padding */
+    background-color: #ffc107; /* Yellow background */
+    color: #0056b3; /* Blue text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-weight: bold; /* Bold text for emphasis */
+    font-size: 16px; /* Button font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change to blue on hover */
+    color: white; /* Change text color to white on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0056b3; /* Blue color for headings */
+    margin-bottom: 20px; /* Spacing below headings */
+    font-size: 24px; /* Increased heading font size */
+}

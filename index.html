@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <!-- <link rel="stylesheet" href="styles.css"> Link to your CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="left">
+          <button class="email">
+            <i class="fa-solid fa-envelope"></i> muhammedlayan@gmail.com
+          </button>
+          <button class="phone">
+            <i class="fa-solid fa-phone"></i> +923128854302
+          </button>
+        </div>
+  
+        <div class="right">
+          <button class="welcome">Welcome To Press Mart</button>
+          <select name="languages" id="lang" style="margin-right: 4vmin">
+            <option value="opt0">Eng</option>
+            <option value="opt1">Arabic</option>
+            <option value="opt2">Urdu</option>
+            <option value="opt3">German</option>
+            <option value="opt4">French</option>
+            <option value="opt5">Italian</option>
+          </select>
+  
+          <select name="currency" id="currency">
+            <option value="opt1">Dollar</option>
+            <option value="opt2">Pkr</option>
+            <option value="opt3">Euro</option>
+            <option value="opt4">Riyal</option>
+            <option value="opt5">Dirham</option>
+          </select>
+        </div>
+      </header>
+  
+      <!--NAVBAR-->
+      <nav>
+        <button class="toggle-button">☰</button>
+        <div class="name"><span>Press</span>Mart</div>
+        <div class="navigation">
+          <a href="homepage.html">Home</a>
+          <a>Product <sup>HOT</sup></a>
+          <a>About</a>
+          <a>Contact</a>
+        </div>
+        <div class="icons">
+          <a class="fa-solid fa-search" id="search-btn"></a>
+          <a href="index.html" class="fa-solid fa-user"><sup class="sup1"></sup></a>
+          <a  id="shopping-cart" class="fa-solid fa-shopping-cart" onclick="openSideWindow()">
+            <sup class="sup2">0</sup>
+        </a>
+        </div>
+        <!-- <form action="" class="search-form">
+          <input type="search" id="search" placeholder="search here...">
+          <label for="search-box" class="fas fa-search"></label>
+      </form> -->
+      </nav>
+  
+      <div class="nav-menu">
+        <button class="close-button">x</button>
+        <a>Home</a>
+        <a>Product <sup>HOT</sup></a>
+        <a>About</a>
+        <a>Contact</a>
+      </div>
+  
+  
+<h1>Welcome to Press Mart</h1>
+<h2 id="welcome-message"></h2>
+<button onclick="logout()" id="logout">Logout</button>
+
+
+
+    <main>
+        <section class="cart-products">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                  <h4>Qur Collection</h4>
+                  <ul>
+                    <li><a href="#womens-fashion">Women's Fashion</a></li>
+                    <li><a href="#watches">Watches</a></li>
+                    <li><a href="#backpacks">Backpacks</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                  </ul>
+              </div>
+                <div class="subscribe">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form class="subscribe-form" novalidate>
+                        <input id="f-input" type="email" placeholder="Enter your email" required aria-describedby="emailisreq">
+                        <span id="emailisreq" role="alert" aria-live="assertive"></span>
+                        <button type="submit" id="f-btn">Subscribe</button>
+                    </form>
+                </div>
+                <div class="quick-links">
+                  <h4>Services</h4>
+                  <ul>
+                    <li>24/7 Customer Support</li>
+                    <li>Free Shipping on Orders Above $50</li>
+                    <li>Easy Returns and Exchanges</li>
+                    <li>Exclusive Discounts for Members</li>
+                  </ul>
+              </div>
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+                    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Press Mart. All rights reserved.</p>
+                <p>Made With &hearts; By Muhammad Layan.</p>
+            </div>
+        </footer>
+           
+           
+      
+        
+        <!--side open cart-->
+      
+        <!-- Side Window -->
+        <div id="sideWindow" class="side-window">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeSideWindow()">&times;</a>
+          <h2>Enjoy Your Shoping !</h2>
+          <div class="cart-items">
+          <!--Product will be add here dynamicly-->
+          </div>
+      <!--Checkout-->
+      <div class="checkout">
+        <h1>CHECK<span>OUT</span></h1>
+        <div class="product-price">
+          <h4>Subtotal:</h4>
+          <h3 id="subtotal">$0</h3>
+        </div>
+        <hr>
+        <div class="tax">
+          <h4>Tax:</h4>
+          <h3 id="tax">$3</h3>
+        </div>
+        <hr>
+        <div class="final-total">
+          <h4>Final Total:</h4>
+          <h3  id="final-total">$3</h3>
+      
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+        </div>
+      
+      
+      <!--poppup-->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn-popup" onclick="closePopup()">&times;</span>
+          <h2>Quantity Has Been Updated</h2>
+          <button class="close-button" onclick="closePopup()">Close</button>
+          <p class="thank-you">Thank you!</p>
+        </div>
+      </div>
+      
+
+    <script src="script.js"></script>
+    <script>
+        // Display welcome message
+        const welcomeMessage = document.getElementById("welcome-message");
+        const loggedInUser = sessionStorage.getItem("loggedInUser");
+        welcomeMessage.innerText = `Welcome back, ${loggedInUser}!`;
+
+        // Logout functionality
+        const logoutButton = document.getElementById("logout-button");
+        logoutButton.addEventListener("click", () => {
+            sessionStorage.removeItem("loggedInUser");
+            window.location.href = "login.html"; // Redirect to login page
+        });
+
+        // Load cart items
+        const cartItemsContainer = document.getElementById("cart-items");
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        cartItems.forEach(item => {
+            const cartItemDiv = document.createElement("div");
+            cartItemDiv.className = "cart-item";
+            cartItemDiv.innerHTML = `
+                <img src='${item.img}' alt='${item.name}'>
+                <h3>${item.name}</h3>
+                <div class='price'>${item.price}</div>
+                <div class='quantity'>Quantity: ${item.quantity}</div>
+            `;
+            cartItemsContainer.appendChild(cartItemDiv);
+        });
+
+        // If no items in cart, display a message
+        if (cartItems.length === 0) {
+            cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+        }
+    </script>
+</body>
+</html> 

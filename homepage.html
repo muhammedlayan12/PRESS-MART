@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Press Mart</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="left">
+        <button class="email">
+          <i class="fa-solid fa-envelope"></i> muhammedlayan@gmail.com
+        </button>
+        <button class="phone">
+          <i class="fa-solid fa-phone"></i> +923128854302
+        </button>
+      </div>
+
+      <div class="right">
+        <button class="welcome">Welcome To Press Mart</button>
+        <select name="languages" id="lang" style="margin-right: 4vmin">
+          <option value="opt0">Eng</option>
+          <option value="opt1">Arabic</option>
+          <option value="opt2">Urdu</option>
+          <option value="opt3">German</option>
+          <option value="opt4">French</option>
+          <option value="opt5">Italian</option>
+        </select>
+
+        <select name="currency" id="currency">
+          <option value="opt1">Dollar</option>
+          <option value="opt2">Pkr</option>
+          <option value="opt3">Euro</option>
+          <option value="opt4">Riyal</option>
+          <option value="opt5">Dirham</option>
+        </select>
+      </div>
+    </header>
+
+    <!--NAVBAR-->
+    <nav>
+      <button class="toggle-button">☰</button>
+      <div class="name"><span>Press</span>Mart</div>
+      <div class="navigation">
+        <a href="homepage.html">Home</a>
+        <a>Product <sup>HOT</sup></a>
+        <a>About</a>
+        <a>Contact</a>
+      </div>
+      <div class="icons">
+        <a class="fa-solid fa-search" id="search-btn"></a>
+        <a href="index.html" class="fa-solid fa-user"><sup class="sup1"></sup></a>
+        <a id="shopping-cart" class="fa-solid fa-shopping-cart" onclick="openSideWindow()">
+          <sup class="sup2">0</sup>
+      </a>
+      </div>
+      <!-- <form action="" class="search-form">
+        <input type="search" id="search" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form> -->
+    </nav>
+
+    <div class="nav-menu">
+      <button class="close-button">x</button>
+      <a>Home</a>
+      <a>Product <sup>HOT</sup></a>
+      <a>About</a>
+      <a>Contact</a>
+    </div>
+
+    <!--HERO SECTION-->
+    <section class="hero">
+      <div class="content">
+        <h2>Season <span>Sale</span></h2>
+        <h1>MAN'S FASHION</h1>
+        <h3>Min. 35-70% Off</h3>
+        <a class="first">SHOP NOW</a>
+        <a class="second">VIEW MORE</a>
+      </div>
+      <div class="img">
+        <img src="/images/heroimg.png" alt="home img" />
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <div class="heading">
+      <h1>OUR FACILITIES</h1>
+    </div>
+    <section class="services">
+      <div class="service">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Free Shipping</h3>
+        <p>Enjoy free shipping on every order, anywhere in the world.</p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Secure Payment</h3>
+        <p>Safe and secure payment methods to protect your transactions.</p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-dollar"></i>
+        <h3>100% Money Back</h3>
+        <p>
+          Guaranteed full refund if you are not satisfied with your purchase.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-comments"></i>
+        <h3>Online Support</h3>
+        <p>
+          Round-the-clock support to assist you with any questions or issues.
+        </p>
+      </div>
+    </section>
+
+
+    <!--offers section-->
+    <div class="wrapper">
+      <div class="heading">
+        <h1>OUR OFFERS</h1>
+      </div>
+      <div class="offers">
+        <div class="offer">
+          <img src="images/womancollection.jpg" alt="Woman's Collection">
+          <div class="content-offer">
+            <h6>Fashion Style</h6>
+            <h3>Woman's Fashion</h3>
+            <h6>Flat <span>70% Off</span></h6>
+            <h6>Shop Now &rightarrow;</h6>
+          </div>
+        </div>
+        
+        <div class="offer">
+          <img src="images/watchcollection.jpg" alt="Watch Collection">
+          <div class="content-offer">
+            <h6>Elegant Timepieces</h6>
+            <h3>Watch Collection</h3>
+            <h6>Flat <span>50% Off</span></h6>
+            <h6>Shop Now &rightarrow;</h6>
+          </div>
+        </div>
+        
+        <div class="offer">
+          <img src="images/bagcollection.jpg" alt="Backpack Collection">
+          <div class="content-offer">
+            <h6>Outdoor Style</h6>
+            <h3>Backpack Collection</h3>
+            <h6>Flat <span>40% Off</span></h6>
+            <h6>Shop Now &rightarrow;</h6>
+          </div>
+        </div>
+        
+        <div class="offer">
+          <img src="images/mancollection.jpg" alt="Man's Fashion">
+          <div class="content-offer">
+            <h6>Fashion Style</h6>
+            <h3>Man's Fashion</h3>
+            <h6>Flat <span>60% Off</span></h6>
+            <h6>Shop Now &rightarrow;</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    
+<!--     
+    <div class="offers">
+      <div class="offer">
+        <img src="images/womancollection.jpg" alt="">
+        <div class="content-offer">
+          <h6>Fashion Style</h6>
+          <h3>Woman's Fashion</h3>
+          <h6>Flat <span>70% Off</span></h6>
+          <h6>Shop Now &rightarrow;</h6>
+        </div>
+      </div>
+    
+      <div class="offer">
+        <img src="images/watchcollection.jpg" alt="Watch Collection">
+        <div class="content-offer">
+          <h6>Elegant Timepieces</h6>
+          <h3>Watch Collection</h3>
+          <h6>Flat <span>50% Off</span></h6>
+          <h6>Shop Now &rightarrow;</h6>
+        </div>
+      </div>
+    
+      <div class="offer">
+        <img src="images/bagcollection.jpg" alt="Backpack Collection">
+        <div class="content-offer">
+          <h6>Outdoor Style</h6>
+          <h3>Backpack Collection</h3>
+          <h6>Flat <span>40% Off</span></h6>
+          <h6>Shop Now &rightarrow;</h6>
+        </div>
+      </div>
+    
+      <div class="offer">
+        <img src="images/mancollection.jpg" alt="Man's Fashion">
+        <div class="content-offer">
+          <h6>Fashion Style</h6>
+          <h3>Man's Fashion</h3>
+          <h6>Flat <span>60% Off</span></h6>
+          <h6>Shop Now &rightarrow;</h6>
+        </div>
+      </div>
+    </div> -->
+    
+
+
+
+
+
+
+    <div class="container-pr">
+      <div class="header-pr">
+       <h1>
+        Featured Products
+       </h1>
+      </div>
+      <div class="tabs">
+       <a class="active">
+        New Arrival
+       </a>
+       <a>
+        Best Selling
+       </a>
+       <a>
+        Top Rated
+       </a>
+      </div>
+      <div class="product-grid">
+       <div class="product">
+        <div class="discount">
+         19% OFF
+        </div>
+        <div class="featured">
+         FEATURED
+        </div>
+        <img alt="Tan Solid Laptop Backpack" height="220" src="/images/product1backpack.jpg" width="220"/>
+        <p>
+         Backpacks
+        </p>
+        <h3>
+         Tan Solid Laptop Backpack
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (2)
+         </span>
+        </div>
+        <div class="price">
+         $200.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+      
+       </div>
+       <div class="product">
+        <img alt="Brown Solid Biker Jacket" height="220" src="/images/product2jacket.jpg" width="220"/>
+        <p>
+         Jackets
+        </p>
+        <h3>
+         Brown Solid Biker Jacket
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $900.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <img alt="Men Brown Solid Mid-Top Boots" height="220" src="/images/product3boots.jpeg" width="220"/>
+        <p>
+         Casual Shoes, Sneakers
+        </p>
+        <h3>
+         Men Brown Solid Mid-Top Boots
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $3560.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <img alt="Petite Olive Green Solid Top" height="220" src="/images/product4top.jpg" width="220"/>
+        <p>
+         Dresses &amp; Tops
+        </p>
+        <h3>
+         Petite Olive Green Solid Top
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $49.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <div class="discount">
+         18% OFF
+        </div>
+        <div class="featured">
+         FEATURED
+        </div>
+        <img alt="Brown Solid Laptop Bag" height="220" src="/images/product5bagpack.jpg" width="220"/>
+        <p>
+         Handbags, Messenger Bag
+        </p>
+        <h3>
+         Brown Solid Laptop Bag
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $99.00
+         <!-- <span class="old-price">
+          $120.00
+         </span> -->
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <img alt="Black Analogue and Digital Watch" height="220" src="/images/product6watch.webp" width="220"/>
+        <p>
+         Analog Watches, Digital Watches
+        </p>
+        <h3>
+         Black Analogue and Digital Watch
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star empty">
+         </i>
+         <i class="fas fa-star empty">
+         </i>
+         <i class="fas fa-star empty">
+         </i>
+         <i class="fas fa-star empty">
+         </i>
+         <i class="fas fa-star empty">
+         </i>
+         <span>
+          (0)
+         </span>
+        </div>
+        <div class="price">
+         $1599.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <img alt="Men Navy Printed Round Neck T-Shirt" height="220" src="/images/product7navyt-shirt.webp" width="220"/>
+        <p>
+         T-Shirts
+        </p>
+        <h3>
+         Men Navy Printed Round Neck T-Shirt
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $50.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <div class="featured">
+         FEATURED
+        </div>
+        <img alt="Brown Self Design Shoulder Bag" height="220" src="/images/product8shiulderbag.jpg" width="220"/>
+        <p>
+         Handbags
+        </p>
+        <h3>
+         Brown Self Design Shoulder Bag
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <i class="fas fa-star empty">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $78.00
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <div class="discount">
+         15% OFF
+        </div>
+        <img alt="Brown Q Explorist HR Leather Smart Watch" height="220" src="/images/product9leatherwatch.jpeg" width="220"/>
+        <p>
+         Smart Analog, Smart Watches
+        </p>
+        <h3>
+         Brown Q Explorist HR Leather Smart Watch
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $1699.00
+         <!-- <span class="old-price">
+          $2,000.00
+         </span> -->
+        </div>
+       <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+       <div class="product">
+        <div class="discount">
+         17% OFF
+        </div>
+        <img alt="Brown Solid Leather Belt" height="220" src="/images/product10belt.jpg" width="220"/>
+        <p>
+         Belts
+        </p>
+        <h3>
+         Brown Solid Leather Belt
+        </h3>
+        <div class="rating">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <i class="fas fa-star empty">
+         </i>
+         <span>
+          (1)
+         </span>
+        </div>
+        <div class="price">
+         $50.00
+         <!-- <span class="old-price">
+          $18.00
+         </span> -->
+        </div>
+        <div class="shop-now">
+          <a id="add-to-cart" class="add-to-cart">Add-To-Cart</a>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!--Montly Offers-->
+     <div class="wrapper-weekend-sales">
+      <div class="heading">
+        <h1>WEEKEND SALE</h1>
+      </div>
+      <div class="weekend-sales">
+        <!-- Weekend Sale 1 -->
+        <div class="weekend-sale">
+          <img src="images/womanofferweekendsale.jpg" alt="Fashion Sale">
+          <div class="content-weekend-sale">
+            <h6>Chic and Trendy</h6>
+            <h3>Women's Fashion</h3> <!-- Updated text -->
+            <h6>Up to <span>60% Off</span></h6>
+            <h6>Shop Now &rightarrow;</h6>
+          </div>
+        </div>
+        
+        <!-- Weekend Sale 2 -->
+        <div class="weekend-sale">
+          <img src="images/manofferweekendsale.jpg" alt="Fashion Sale">
+          <div class="content-weekend-sale">
+            <h6>Classic and Bold</h6>
+            <h3>Men's Style</h3> <!-- Updated text -->
+            <h6>Flat <span>50% Off</span></h6>
+            <h6>Shop Now &rightarrow;</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- <div class="monthly-of">
+      <div class="offer-1">
+        img
+      </div>
+      <div class="offer-2"></div>
+     </div> -->
+
+
+     <!--footer-->
+     <footer class="footer">
+      <div class="footer-container">
+          <div class="quick-links">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="quick-links">
+            <h4>Qur Collection</h4>
+            <ul>
+              <li><a href="#womens-fashion">Women's Fashion</a></li>
+              <li><a href="#watches">Watches</a></li>
+              <li><a href="#backpacks">Backpacks</a></li>
+              <li><a href="#accessories">Accessories</a></li>
+            </ul>
+        </div>
+          <div class="subscribe">
+              <h4>Subscribe to our Newsletter</h4>
+              <form class="subscribe-form" novalidate>
+                  <input id="f-input" type="email" placeholder="Enter your email" required aria-describedby="emailisreq">
+                  <span id="emailisreq" role="alert" aria-live="assertive"></span>
+                  <button type="submit" id="f-btn">Subscribe</button>
+              </form>
+          </div>
+          <div class="quick-links">
+            <h4>Services</h4>
+            <ul>
+              <li>24/7 Customer Support</li>
+              <li>Free Shipping on Orders Above $50</li>
+              <li>Easy Returns and Exchanges</li>
+              <li>Exclusive Discounts for Members</li>
+            </ul>
+        </div>
+          <div class="social-icons">
+              <h4>Follow Us</h4>
+              <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Your Press Mart. All rights reserved.</p>
+          <p>Made With &hearts; By Muhammad Layan.</p>
+      </div>
+  </footer>
+     
+     
+
+  
+  <!--side open cart-->
+
+  <!-- Side Window -->
+  <div id="sideWindow" class="side-window">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeSideWindow()">&times;</a>
+    <h2>Enjoy Your Shoping !</h2>
+    <div class="cart-items">
+    <!--Product will be add here dynamicly-->
+    </div>
+<!--Checkout-->
+<div class="checkout">
+  <h1>CHECK<span>OUT</span></h1>
+  <div class="product-price">
+    <h4>Subtotal:</h4>
+    <h3 id="subtotal">$0</h3>
+  </div>
+  <hr>
+  <div class="tax">
+    <h4>Tax:</h4>
+    <h3 id="tax">$3</h3>
+  </div>
+  <hr>
+  <div class="final-total">
+    <h4>Final Total:</h4>
+    <h3  id="final-total">$3</h3>
+
+  </div>
+  <button class="checkout-btn">Checkout</button>
+</div>
+  </div>
+
+
+<!--poppup-->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn-popup" onclick="closePopup()">&times;</span>
+    <h2>Quantity Has Been Updated</h2>
+    <button class="close-button" onclick="closePopup()">Close</button>
+    <p class="thank-you">Thank you!</p>
+  </div>
+</div>
+
+
+  
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

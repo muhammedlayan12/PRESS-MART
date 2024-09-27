@@ -1,39 +1,74 @@
-h1{
-    text-align: center;
-    color:  #0056b3;
-    font-size: 2.5em;
-    font-family: 'poppin'sans-serif;
+/* Parent container for the logout button */
+#logout-container {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  margin-top: 20px; /* Optional margin for spacing */
 }
 
-
-#welcome-message{
-    color: #ffc107;
-    text-align: center;
-    font-size: 2em;
+h1 {
+  text-align: center;
+  color: #0056b3;
+  font-size: 2.5em; /* Base font size */
+  font-family: 'Poppins', sans-serif; /* Corrected font-family syntax */
 }
 
-
-#welcome-message span{
-    color: #0056b3;
+#welcome-message {
+  color: #ffc107;
+  text-align: center;
+  font-size: 2em; /* Base font size */
 }
 
-
-#logout{
-    margin: auto;
-    padding: 8px 30px 8px 30px;
-    color: #ffc107;
-    background-color: #0056b3;
-    border: none;
-    font-size: 1.2em;
-    border-radius: 20px;
-    transition:all 0.5s ease;
+#welcome-message span {
+  color: #0056b3;
 }
 
-#logout:hover{
-    color: #004a99;
-    background-color: #ffc107;
+#logout {
+  margin: auto; /* Centering if it's within a flex container */
+  padding: 8px 30px; /* Reduced duplicate values */
+  color: #ffc107;
+  background-color: #0056b3;
+  border: none;
+  font-size: 1.2em; /* Base font size */
+  border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
+#logout:hover {
+  color: #004a99;
+  background-color: #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em; /* Reduce font size for tablets */
+  }
+
+  #welcome-message {
+      font-size: 1.5em; /* Reduce font size for tablets */
+  }
+
+  #logout {
+      font-size: 1em; /* Reduce font size for tablets */
+      padding: 8px 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em; /* Further reduce font size for mobile */
+  }
+
+  #welcome-message {
+      font-size: 1.2em; /* Further reduce font size for mobile */
+  }
+
+  #logout {
+      font-size: 0.9em; /* Further reduce font size for mobile */
+      padding: 6px 15px; /* Adjust padding */
+  }
+}
 
 * {
     box-sizing: border-box;

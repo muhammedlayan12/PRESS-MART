@@ -129,8 +129,11 @@ nav {
   display: flex;
   z-index: 999;
   top: 0;
-  justify-content: space-around;
+  justify-content: space-around; /* Use space-around for even spacing */
+  align-content: center;
+  align-items: center;
   padding: 10px;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 nav .name {
@@ -138,6 +141,7 @@ nav .name {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.3em;
   font-weight: 700;
+  text-align: center; /* Center the name */
 }
 
 nav .name span {
@@ -147,6 +151,7 @@ nav .name span {
 nav .navigation {
   text-align: center;
   margin-top: 1.4vmin;
+  flex: 1; /* Allow it to take up space */
 }
 
 nav .navigation a {
@@ -224,10 +229,103 @@ nav .icons a:hover {
 /* Hamburger menu styling */
 .toggle-button {
   border: none;
+  font-size: 1.5em; /* Make hamburger icon bolder */
+  display: none; /* Hidden by default */
 }
 
+/* Responsive styles */
+@media screen and (max-width: 1400px) {
+  nav{
+    justify-content: space-around;
+  }
+  nav .name {
+    font-size: 2.1em; /* Slightly smaller font for medium screens */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav{
+    justify-content: space-around;
+  }
+  nav .name {
+    font-size: 1.9em; /* Further reduce font size */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav .name {
+    font-size: 2em; /* Smaller font */
+  }
+
+  nav .navigation {
+    display: none; /* Hide navigation links on smaller screens */
+  }
+  
+  .toggle-button {
+    font-size: 1.8em;
+    font-weight: bolder;
+    display: block; /* Show toggle button on smaller screens */
+  }
+}
+
+@media screen and (max-width: 786px) {
+  nav .navigation a {
+    margin: 10px 0; /* Adjust margins for mobile */
+  }
+
+  nav .name {
+    font-size: 2em; /* Smaller font */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 5px; /* Reduce padding */
+  }
+
+  nav .name {
+    font-size: 1.5em; /* Smaller font */
+  }
+
+  nav .icons a {
+    font-size: 1em; /* Smaller link font */
+  }
+
+  .toggle-button {
+    font-size: 1.5em; /* Make hamburger icon larger */
+  }
+}
+
+@media screen and (max-width: 410px) {
+  nav{
+    justify-content: space-between;
+  }
+  nav .name {
+    font-size: 1.5em; /* Even smaller font */
+  }
+
+  nav .icons a {
+    margin: 5px; /* Adjust margins for very small screens */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  nav .name {
+    font-size: 1.3em; /* Minimal font size for small screens */
+  }
+
+  nav .navigation a {
+    font-size: 0.8em; /* Smaller link font */
+  }
+
+  .toggle-button {
+    font-size: 1.4em; /* Increase size for better touch */
+  }
+}
+
+/* Hamburger menu styles */
 .nav-menu {
-  display: none;
+  display: none; /* Initially hidden */
   position: fixed;
   top: 0;
   left: 0;
@@ -240,6 +338,10 @@ nav .icons a:hover {
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.nav-menu.active {
+  display: flex; /* Show menu when active */
 }
 
 .nav-menu a {
@@ -1406,190 +1508,7 @@ color: white;
     font-size: 0.5em;
   }
 
-
-
-
-  /*nav*/
-  nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  nav .name {
-    font-size: 1.3em;
-  }
-
-  nav .navigation {
-    margin-top: 0.3vmin;
-  }
-
-  nav .navigation a {
-    margin: 1vmin;
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-
-  nav .navigation a sup {
-    height: 2vmin;
-    width: 2.4vmin;
-    font-size: 0.3em;
-  }
-
-  nav .icons {
-    text-align: center;
-  }
-
-  nav .icons i {
-    font-size: 1em;
-    margin: 1vmin;
-  }
-  nav .icons i sup {
-    height: 1.7vmin;
-    width: 1.6vmin;
-    font-size: 0.3em;
-  }
 }
-
-
-
-/*humburer*/
-@media screen and (max-width: 796px) {
-  nav{
-    justify-content: space-between;
-  }
-  .toggle-button {
-    display: block;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  nav .navigation {
-    display: none;
-  }
-
-}
-
-
-
-
-
-
-/*navbar after humburger on 796px*/
-@media screen and (max-width:796px){
-  nav{
-  justify-content: space-around;
-}
-
-nav .name{
-  margin-top: 0.4vmin;
-  font-size: 2em;
-}
-.toggle-button{
-  margin-top: 0.3vmin;
-  font-size: 1.8em;
-  font-weight: bolder;
-}
-
-nav .icons i{
-  margin: 0.5vmin;
-  margin-top: 1vmin;
-  font-size: 1em;
-}
-
-nav .icons i sup {
-  height: 2.2vmin;
-  width: 2.2vmin;
-  font-size: 0.5em;
-}
-}
-
-
-
-
-
-/*navbar after humburger on 470px*/
-@media screen and (max-width:470px){
-  nav{
-  justify-content: space-around;
-  align-content: center;
-}
-
-nav .name{
-  margin-top: 1vmin;
-  font-size: 1.7em;
-}
-.toggle-button{
-  font-size: 1.5em;
-  font-weight: bolder;
-}
-
-nav .icons i{
-  margin-top: 1.5vmin;
-  font-size: 0.8em;
-}
-
-nav .icons i sup {
-  height: 2.5vmin;
-  width:2.5vmin;
-  font-size: 0.5em;
-}
-}
-
-
-
-/*navbar after humburger on 350px*/
-@media screen and (max-width:350px){
-
-nav .name{
-  margin-top: 3vmin;
-  font-size: 1.1em;
-}
-.toggle-button{
-  margin-top: 0.30vmin;
-  font-size: 1em;
-  font-weight: bolder;
-}
-
-nav .icons i{
-  margin-top: 3.2vmin;
-  font-size: 0.6em;
-}
-
-nav .icons i sup {
-  height: 2.4vmin;
-  width:2.4vmin;
-  font-size: 0.6em;
-}
-}
-
-
-
-/*navbar after humburger on 310px*/
-@media screen and (max-width:310px){
-
-  nav .name{
-    font-size: 1.4em;
-  }
-  .toggle-button{
-    margin-top: 0.30vmin;
-    font-size: 1em;
-    font-weight: bolder;
-  }
-  
-  nav .icons i{
-    margin-top: 3.4vmin;
-    font-size: 0.6em;
-  }
-  
-  nav .icons i sup {
-    height: 2.1vmin;
-    width:2.1vmin;
-    font-size: 0.4em;
-  }
-  }
-  
 
 
 /*hero section  on 1400px*/

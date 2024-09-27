@@ -11,6 +11,7 @@ body {
 
 .form-container {
     max-width: 300px; /* Width of the form */
+    width: 100%; /* Make the form responsive */
     padding: 20px;
     border: none; /* Removed border for a cleaner look */
     border-radius: 15px; /* More rounded corners for a modern look */
@@ -58,9 +59,25 @@ button:hover {
     transform: translateY(-2px); /* Lift effect on hover */
 }
 
-h1, h2 {
+h1 {
     text-align: center;
     color: #0056b3; /* Blue color for headings */
     margin-bottom: 20px; /* Spacing below headings */
     font-size: 24px; /* Increased heading font size */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 90%; /* Full width on small screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 20px; /* Decrease heading size */
+    }
+
+    input, button {
+        font-size: 14px; /* Decrease input and button font size */
+    }
 }
